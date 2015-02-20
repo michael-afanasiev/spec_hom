@@ -2,11 +2,11 @@
 CXX 		= mpicxx
 
 # Dependencies
-PETSC_DIR 	= /opt/petsc
+PETSC_DIR 	= /opt/local
 
 #Flags
 CXXFLAGS	= -O0 -g -Wall -std=c++11 -I$(PETSC_DIR)/include 
-LDFLAGS		= -L$(PETSC_DIR)/lib -lpetsc -lexodus
+LDFLAGS		= -L$(PETSC_DIR)/lib -lpetsc 
 
 # Object files
 OBJECTS		= \
